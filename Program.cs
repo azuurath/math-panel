@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace h_part_2
 {
@@ -22,8 +22,9 @@ namespace h_part_2
             
             int subsection = Convert.ToInt32(Console.ReadLine());
 
-            if (subsection == 1)
-            {   
+            switch (subsection) {
+                case 1:
+
                 Console.Clear();
                     Console.Title = "addition";
 
@@ -43,12 +44,9 @@ namespace h_part_2
                 Console.WriteLine("your result is " + result1);
                 Console.ReadKey();
 
-
-
-            }
-            else if (subsection == 2)
-            {
-  Console.Title = "subtraction";
+                break;
+                case 2:
+                 Console.Title = "subtraction";
                 Console.Clear();
             
                 double sub1;
@@ -66,10 +64,10 @@ namespace h_part_2
 
                 Console.WriteLine("your result is " + result2);
                 Console.ReadKey();
-            }
-            else if (subsection == 3)
-            {
-  Console.Title = "multiplcation";
+
+                break;
+                case 3:
+                  Console.Title = "multiplcation";
                 Console.Clear();
             
                 double mul1;
@@ -81,17 +79,17 @@ namespace h_part_2
                 Console.WriteLine("please enter second digit: ");
                 mul2 = Convert.ToDouble(Console.ReadLine());
 
-                double result1 = mul1 * mul2;
+                double result3 = mul1 * mul2;
 
                 Console.Clear();
 
-                Console.WriteLine("your result is " + result1);
+                Console.WriteLine("your result is " + result3);
                 Console.ReadKey();
-            }
-            else if (subsection == 4)
-            {
-                                    Console.Clear();
-                                    Console.Title = "division";
+
+                break;
+                case 4:
+                Console.Clear();
+                Console.Title = "division";
             
                 double div1;
                 double div2;
@@ -102,15 +100,15 @@ namespace h_part_2
                 Console.WriteLine("please enter second digit: ");
                 div2 = Convert.ToDouble(Console.ReadLine());
 
-                double result1 = div1 / div2;
+                double result4 = div1 / div2;
 
                 Console.Clear();
 
-                Console.WriteLine("your result is " + result1);
+                Console.WriteLine("your result is " + result4);
                 Console.ReadKey();
+
+                break;
             }
-
-
 
         }
     }
